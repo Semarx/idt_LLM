@@ -1,0 +1,32 @@
+============================================================================================
+OMEGA at W = 1, per turn, both sides — Llama-2 tokens, K=32,000, no alphabet, no window
+============================================================================================
+
+C1 human-LLM   58 conversations   turns 25–1402
+  per-message entropy H(q_t)   side A -0.000 to 8.948 bits   side B 1.000 to 8.833
+  Omega, single turn           side A -6.781 to +7.003   side B -6.616 to +6.169
+  gap = Omega_A - Omega_B      -7.122 to +7.652
+  conversations where gap is positive on more turns than negative: 22 of 55   sign p = 0.177
+  conversations where |Omega_A| exceeds |Omega_B| on more turns:    57 of 58   sign p = 4.09e-16
+  turns compared, total: 12,794
+  empty messages: side A 1   side B 0
+
+C2 LLM-LLM   8 conversations   turns 25–25
+  per-message entropy H(q_t)   side A 3.664 to 5.892 bits   side B 4.404 to 6.250
+  Omega, single turn           side A -1.126 to +0.944   side B -0.865 to +0.865
+  gap = Omega_A - Omega_B      -0.989 to +1.148
+  conversations where gap is positive on more turns than negative: 4 of 6   sign p = 0.688
+  conversations where |Omega_A| exceeds |Omega_B| on more turns:    4 of 5   sign p = 0.375
+  turns compared, total: 192
+  empty messages: side A 0   side B 0
+
+C3 PhotoBook   2171 conversations   turns 25–65
+  per-message entropy H(q_t)   side A -0.000 to 5.865 bits   side B -0.000 to 6.239
+  Omega, single turn           side A -5.451 to +5.538   side B -5.359 to +5.444
+  gap = Omega_A - Omega_B      -8.851 to +9.412
+  conversations where gap is positive on more turns than negative: 800 of 1926   sign p = 1.15e-13
+  conversations where |Omega_A| exceeds |Omega_B| on more turns:    1025 of 2040   sign p = 0.842
+  turns compared, total: 65,983
+  empty messages: side A 0   side B 0
+
+For scale: the D1 band at W=50 is 0.4408 bits.  At W=1 it is 14.97 bits, so no band applies.

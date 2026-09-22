@@ -1,0 +1,175 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 27441.61it/s]
+[1/58] chatgpt_2b6e497c n=105 k=2  21s
+[2/58] chatgpt_72ac2fe1 n=26 k=2  27s
+[3/58] claude_05614dd8 n=246 k=3  72s
+[4/58] claude_0721f6bf n=545 k=4  162s
+[5/58] claude_0b652ac5 n=26 k=2  168s
+[6/58] claude_0ce5dc7e n=30 k=2  175s
+[7/58] claude_0e0f52e1 n=59 k=2  186s
+[8/58] claude_104c606a n=369 k=3  251s
+[9/58] claude_1723f49c n=330 k=3  313s
+[10/58] claude_1b4f6443 n=541 k=4  417s
+[11/58] claude_1bfa9360 n=102 k=2  437s
+[12/58] claude_1d2e0d47 n=239 k=3  481s
+[13/58] claude_2de077fa n=90 k=2  499s
+[14/58] claude_2f7649f8 n=246 k=3  540s
+[15/58] claude_3d1a92f5 n=93 k=2  558s
+[16/58] claude_3df4ba21 n=790 k=4  700s
+[17/58] claude_4704f1be n=84 k=2  715s
+[18/58] claude_4b5ee541 n=33 k=2  722s
+[19/58] claude_5742c38f n=89 k=2  739s
+[20/58] claude_58a2d3d5 n=119 k=2  761s
+[21/58] claude_5aa7542e n=220 k=3  801s
+[22/58] claude_5bf93859 n=40 k=2  810s
+[23/58] claude_5eae3fed n=364 k=3  877s
+[24/58] claude_5f70ab01 n=144 k=2  904s
+[25/58] claude_671aa314 n=411 k=4  975s
+[26/58] claude_7237eb7d n=85 k=2  992s
+[27/58] claude_81982bfd n=128 k=2  1014s
+[28/58] claude_861911ee n=174 k=3  1047s
+[29/58] claude_8cefedb9 n=25 k=2  1053s
+[30/58] claude_8d01eef3 n=311 k=3  1104s
+[31/58] claude_8f7fe558 n=401 k=4  1[32/5[32/58] claude_90b6161d n=1402 k=4  1435s
+[33/58] claude_9c24efbd n=763 k=4  1572s
+[34/58] claude_b5123bc7 n=668 k=4  1696s
+[35/58] claude_bea0ac10 n=440 k=4  1779s
+[36/58] claude_cb2d2a0d n=30 k=2  1786s
+[37/58] claude_cf7bd491 n=328 k=3  1847s
+[38/58] claude_d1affe8e n=37 k=2  1855s
+[39/58] claude_e71d7272 n=403 k=4  1925s
+[40/58] claude_ef2e1577 n=56 k=2  1936s
+[41/58] claude_f4fdb20c n=155 k=3  1963s
+[42/58] claude_f662847a n=137 k=2  1988s
+[43/58] claude_f697cd0a n=140 k=2  2014s
+[44/58] claude_f6c4951c n=81 k=2  2029s
+[45/58] claude_f77dc52f n=35 k=2  2037s
+[46/58] claude_f9458668 n=389 k=3  2106s
+[47/58] claude_fc552e23 n=238 k=3  2147s
+[48/58] claude_fd1ecb17 n=185 k=3  2181s
+[49/58] gemini_23f0e0bc n=300 k=3  2221s
+[50/58] gemini_2f973dfd n=25 k=2  2224s
+[51/58] gemini_33a87c65 n=125 k=2  2237s
+[52/58] gemini_57b0a646 n=231 k=3  2262s
+[53/58] gemini_67637970 n=34 k=2  2266s
+[54/58] gemini_780a6eb5 n=52 k=2  2270s
+[55/58] gemini_80e14451 n=33 k=2  2274s
+[56/58] gemini_af10f570 n=36 k=2  2278s
+[57/58] gemini_f628cfb3 n=31 k=2  2282s
+[58/58] gemini_fb457eeb n=35 k=2  2286s
+               record   side     N  k       eps screen  clear_global  clear_strat  clear_local  clear_circ
+0    chatgpt_2b6e497c  model   104  2 -0.008810   PASS         False        False        False       False
+1    chatgpt_2b6e497c   user   104  2  0.011763   PASS         False        False        False       False
+2    chatgpt_72ac2fe1  model    25  2 -0.043793   PASS         False        False        False       False
+3    chatgpt_72ac2fe1   user    25  2 -0.061783   PASS         False        False        False       False
+4     claude_05614dd8  model   245  3  0.012350   PASS         False        False        False       False
+5     claude_05614dd8   user   245  3  0.061104   PASS          True         True         True        True
+6     claude_0721f6bf  model   544  4  0.107430   PASS          True         True         True        True
+7     claude_0721f6bf   user   544  4  0.107974   PASS          True         True         True        True
+8     claude_0b652ac5  model    25  2 -0.016133   PASS         False        False        False       False
+9     claude_0b652ac5   user    25  2  0.026298   PASS         False        False        False        True
+10    claude_0ce5dc7e  model    29  2 -0.027308   PASS         False        False        False       False
+11    claude_0ce5dc7e   user    29  2  0.369764   PASS          True         True         True        True
+12    claude_0e0f52e1  model    58  2 -0.002213   PASS         False        False        False       False
+13    claude_0e0f52e1   user    58  2  0.493683   PASS          True         True         True        True
+14    claude_104c606a  model   368  3  0.016994   PASS          True         True         True        True
+15    claude_104c606a   user   368  3  0.046620   PASS          True         True         True        True
+16    claude_1723f49c  model   329  3  0.015932   PASS          True         True        False        True
+17    claude_1723f49c   user   329  3  0.073546   PASS          True         True         True        True
+18    claude_1b4f6443  model   540  4  0.027320   PASS          True         True         True        True
+19    claude_1b4f6443   user   540  4  0.082771   PASS          True         True         True        True
+20    claude_1bfa9360  model   101  2  0.145101   PASS          True         True         True        True
+21    claude_1bfa9360   user   101  2  0.061531   PASS          True         True        False        True
+22    claude_1d2e0d47  model   238  3  0.127006   PASS          True         True         True        True
+23    claude_1d2e0d47   user   238  3  0.077119   PASS          True         True         True        True
+24    claude_2de077fa  model    89  2 -0.018968   PASS         False        False        False       False
+25    claude_2de077fa   user    89  2 -0.015874   PASS         False        False        False       False
+26    claude_2f7649f8  model   245  3  0.015939   PASS         False        False        False       False
+27    claude_2f7649f8   user   245  3  0.013004   PASS         False        False        False       False
+28    claude_3d1a92f5  model    92  2  0.085903   PASS          True         True         True        True
+29    claude_3d1a92f5   user    92  2  0.102953   PASS          True         True         True        True
+30    claude_3df4ba21  model   789  4  0.128046   PASS          True         True         True        True
+31    claude_3df4ba21   user   789  4  0.065263   PASS          True         True         True        True
+32    claude_4704f1be  model    83  2  0.007003   PASS         False        False        False       False
+33    claude_4704f1be   user    83  2  0.102487   PASS          True         True         True        True
+34    claude_4b5ee541  model    32  2 -0.027556   PASS         False        False        False       False
+35    claude_4b5ee541   user    32  2  0.016555   PASS         False        False        False       False
+36    claude_5742c38f  model    88  2  0.018916   PASS         False        False        False       False
+37    claude_5742c38f   user    88  2 -0.016191   PASS         False        False        False       False
+38    claude_58a2d3d5  model   118  2  0.059850   PASS          True         True         True        True
+39    claude_58a2d3d5   user   118  2  0.098802   PASS          True         True         True        True
+40    claude_5aa7542e  model   219  3  0.128344   PASS          True         True         True        True
+41    claude_5aa7542e   user   219  3  0.078478   PASS          True         True         True        True
+42    claude_5bf93859  model    39  2 -0.016771   PASS         False        False        False       False
+43    claude_5bf93859   user    39  2  0.130757   PASS         False        False        False       False
+44    claude_5eae3fed  model   363  3 -0.000179   PASS         False        False        False       False
+45    claude_5eae3fed   user   363  3  0.038140   PASS          True         True         True        True
+46    claude_5f70ab01  model   143  2  0.125562   PASS          True         True         True        True
+47    claude_5f70ab01   user   143  2  0.254133   PASS          True         True         True        True
+48    claude_671aa314  model   410  4  0.092257   PASS          True         True         True        True
+49    claude_671aa314   user   410  4  0.182367   PASS          True         True         True        True
+50    claude_7237eb7d  model    84  2  0.021821   PASS         False        False        False       False
+51    claude_7237eb7d   user    84  2  0.265696   PASS          True         True         True        True
+52    claude_81982bfd  model   127  2  0.030978   PASS          True         True        False        True
+53    claude_81982bfd   user   127  2  0.120425   PASS          True         True         True        True
+54    claude_861911ee  model   173  3  0.014015   PASS         False        False        False       False
+55    claude_861911ee   user   173  3  0.208317   PASS          True         True         True        True
+56    claude_8cefedb9  model    24  2  0.147065   PASS         False        False        False        True
+57    claude_8cefedb9   user    24  2  0.301558   PASS         False        False        False        True
+58    claude_8d01eef3  model   310  3  0.027974   PASS          True         True         True       False
+59    claude_8d01eef3   user   310  3  0.125282   PASS          True         True         True        True
+60    claude_8f7fe558  model   400  4  0.047912   PASS          True         True         True        True
+61    claude_8f7fe558   user   400  4  0.076667   PASS          True         True         True        True
+62    claude_90b6161d  model  1401  4  0.051534   PASS          True         True         True        True
+63    claude_90b6161d   user  1401  4  0.105138   PASS          True         True         True        True
+64    claude_9c24efbd  model   762  4  0.096085   PASS          True         True         True        True
+65    claude_9c24efbd   user   762  4  0.180447   PASS          True         True         True        True
+66    claude_b5123bc7  model   667  4  0.065772   PASS          True         True         True        True
+67    claude_b5123bc7   user   667  4  0.076903   PASS          True         True         True        True
+68    claude_bea0ac10  model   439  4  0.052352   PASS          True         True         True        True
+69    claude_bea0ac10   user   439  4  0.144992   PASS          True         True         True        True
+70    claude_cb2d2a0d  model    29  2 -0.050484   PASS         False        False        False       False
+71    claude_cb2d2a0d   user    29  2  0.188413   PASS         False        False        False       False
+72    claude_cf7bd491  model   327  3  0.009502   PASS         False        False        False       False
+73    claude_cf7bd491   user   327  3  0.076032   PASS          True         True         True        True
+74    claude_d1affe8e  model    36  2  0.052239   PASS         False        False        False       False
+75    claude_d1affe8e   user    36  2  0.031386   PASS         False        False        False       False
+76    claude_e71d7272  model   402  4  0.028071   PASS          True         True         True        True
+77    claude_e71d7272   user   402  4  0.088917   PASS          True         True         True        True
+78    claude_ef2e1577  model    55  2  0.021729   PASS         False        False        False       False
+79    claude_ef2e1577   user    55  2  0.171366   PASS          True        False         True       False
+80    claude_f4fdb20c  model   154  3  0.040075   PASS         False        False        False       False
+81    claude_f4fdb20c   user   154  3  0.103077   PASS          True         True         True       False
+82    claude_f662847a  model   136  2 -0.008378   PASS         False        False        False       False
+83    claude_f662847a   user   136  2  0.034600   PASS          True         True         True        True
+84    claude_f697cd0a  model   139  2 -0.009962   PASS         False        False        False       False
+85    claude_f697cd0a   user   139  2  0.050834   PASS          True         True         True        True
+86    claude_f6c4951c  model    80  2  0.000673   PASS         False        False        False       False
+87    claude_f6c4951c   user    80  2  0.063774   PASS          True         True         True        True
+88    claude_f77dc52f  model    34  2  0.224342   PASS         False        False        False       False
+89    claude_f77dc52f   user    34  2  0.054776   PASS         False        False        False       False
+90    claude_f9458668  model   388  3  0.066937   PASS          True         True         True        True
+91    claude_f9458668   user   388  3  0.115503   PASS          True         True         True        True
+92    claude_fc552e23  model   237  3  0.040470   PASS          True         True         True        True
+93    claude_fc552e23   user   237  3  0.118039   PASS          True         True         True        True
+94    claude_fd1ecb17  model   184  3  0.008509   PASS         False        False        False       False
+95    claude_fd1ecb17   user   184  3  0.038452   PASS         False        False        False       False
+96    gemini_23f0e0bc  model   299  3  0.066981   PASS          True         True         True        True
+97    gemini_23f0e0bc   user   299  3  0.207649   PASS          True         True         True        True
+98    gemini_2f973dfd  model    24  2  0.056947   PASS         False        False        False       False
+99    gemini_2f973dfd   user    24  2  0.007911   PASS         False        False        False       False
+100   gemini_33a87c65  model   124  2  0.025150   PASS          True         True        False        True
+101   gemini_33a87c65   user   124  2  0.110109   PASS          True         True         True        True
+102   gemini_57b0a646  model   230  3  0.023236   PASS          True         True        False       False
+103   gemini_57b0a646   user   230  3  0.035564   PASS          True        False         True       False
+104   gemini_67637970  model    33  2 -0.038807   PASS         False        False        False       False
+105   gemini_67637970   user    33  2  0.107296   PASS         False        False        False       False
+106   gemini_780a6eb5  model    51  2 -0.003502   PASS         False        False        False       False
+107   gemini_780a6eb5   user    51  2 -0.010985   PASS         False        False        False       False
+108   gemini_80e14451  model    32  2 -0.033449   PASS         False        False        False       False
+109   gemini_80e14451   user    32  2 -0.037730   PASS         False        False        False       False
+110   gemini_af10f570  model    35  2  0.054885   PASS         False        False        False       False
+111   gemini_af10f570   user    35  2  0.063283   PASS         False        False        False       False
+112   gemini_f628cfb3  model    30  2 -0.038891   PASS         False        False        False       False
+113   gemini_f628cfb3   user    30  2 -0.025407   PASS         False        False        False       False
+114   gemini_fb457eeb  model    34  2 -0.000238   PASS         False        False        False       False
+115   gemini_fb457eeb   user    34  2 -0.031375   PASS         False        False        False       False

@@ -1,0 +1,5 @@
+corpus,record,side,N,k,eps,triples_per_run,cover_within,eps_sub_within,q95_strat_within,pct_strat_within,clear_strat_within,q95_local_within,pct_local_within,clear_local_within,q95_circ_within,pct_circ_within,clear_circ_within,cover_pooled,q95_strat_pooled,pct_strat_pooled,clear_strat_pooled
+C2,pooled_k3,model,184,3,0.174592991470942,23,0.864,0.1663,0.07441,100.0,True,0.07757,100.0,True,0.09892,99.95,True,1.0,0.05205,100.0,True
+C2,pooled_k3,user,184,3,0.3734778475266006,23,0.908,0.3855,0.07668,100.0,True,0.11333,100.0,True,0.09263,100.0,True,1.0,0.05237,100.0,True
+C2,pooled_k2,model,184,2,0.21301572728325,23,0.962,0.232,0.04026,100.0,True,0.13879,100.0,True,0.11433,100.0,True,1.0,0.0274,100.0,True
+C2,pooled_k2,user,184,2,0.3774746033105661,23,0.935,0.4032,0.05277,100.0,True,0.03565,100.0,True,0.09377,100.0,True,1.0,0.0327,100.0,True

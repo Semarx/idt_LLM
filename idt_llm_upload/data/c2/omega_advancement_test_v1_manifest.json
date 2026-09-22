@@ -1,0 +1,186 @@
+{
+  "experiment_id": "omega_advancement_test_v1",
+  "timestamp_utc": "2026-09-07T16:53:02.368746+00:00",
+  "hypothesis": "|dOmega| is smaller on advancing turns than on stalled turns",
+  "preregistered_statistic": "D = mean(|dOmega| | advance=1) - mean(|dOmega| | advance=0)",
+  "preregistered_prediction": "D < 0",
+  "omega_definition": {
+    "Omega_prompt_t": "H_prompt_t - H_prompt_(t-1)",
+    "Omega_response_t": "H_response_t - H_response_(t-1)",
+    "dOmega_t": "Omega_response_t - Omega_prompt_t",
+    "turn_1": "excluded from all Omega analysis"
+  },
+  "asking_model": "mistral:7b",
+  "answering_model": "llama3.1:latest",
+  "model_specs": {
+    "asking": {
+      "name": "mistral:7b",
+      "family": "llama",
+      "parameter_size": "7.2B",
+      "quantization": "Q4_K_M",
+      "format": "gguf",
+      "architecture": "llama",
+      "context_length": 32768,
+      "embedding_length": 4096,
+      "block_count": 32,
+      "vocab_size": 32768,
+      "parameter_count": 7248023552,
+      "modified": "2026-08-05T07:59:44.642786096+02:00",
+      "digest": null
+    },
+    "answering": {
+      "name": "llama3.1:latest",
+      "family": "llama",
+      "parameter_size": "8.0B",
+      "quantization": "Q4_K_M",
+      "format": "gguf",
+      "architecture": "llama",
+      "context_length": 131072,
+      "embedding_length": 4096,
+      "block_count": 32,
+      "vocab_size": 128256,
+      "parameter_count": 8030261312,
+      "modified": "2025-11-25T15:37:39.047028505+01:00",
+      "digest": null
+    }
+  },
+  "decoder": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "num_predict": 1200,
+    "both_models": true
+  },
+  "num_ctx_resolved": 32768,
+  "ctx_headroom_tokens": 29491,
+  "strict_no_truncation": true,
+  "seeds": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "max_turns": 25,
+  "early_stop": "only when all 60 elements are recovered",
+  "task": {
+    "task_id": "incident_meridian_v1",
+    "name": "MERIDIAN-4",
+    "n_events": 12,
+    "n_elements": 60,
+    "fields": [
+      "event_id",
+      "actor",
+      "action",
+      "target",
+      "consequence"
+    ],
+    "events": [
+      {
+        "event_id": "T-01",
+        "actor": "svc_deploy",
+        "action": "published",
+        "target": "release bundle 4.11.2",
+        "consequence": "an unsigned artifact entered the registry"
+      },
+      {
+        "event_id": "T-02",
+        "actor": "registry_scanner",
+        "action": "skipped",
+        "target": "signature verification stage",
+        "consequence": "the artifact was marked healthy despite the missing signature"
+      },
+      {
+        "event_id": "T-03",
+        "actor": "node_edge_07",
+        "action": "pulled",
+        "target": "edge fleet manifest EFM-18",
+        "consequence": "the unsigned build reached forty edge nodes"
+      },
+      {
+        "event_id": "T-04",
+        "actor": "config_agent",
+        "action": "rewrote",
+        "target": "firewall rule FW-22",
+        "consequence": "inbound port 8443 was opened to the public interface"
+      },
+      {
+        "event_id": "T-05",
+        "actor": "external_host_198",
+        "action": "connected",
+        "target": "management endpoint MGT-1",
+        "consequence": "an unauthenticated session was established"
+      },
+      {
+        "event_id": "T-06",
+        "actor": "session_S441",
+        "action": "enumerated",
+        "target": "secrets namespace prod-eu",
+        "consequence": "the names of 214 secrets were listed"
+      },
+      {
+        "event_id": "T-07",
+        "actor": "vault_proxy",
+        "action": "issued",
+        "target": "short-lived token VT-9931",
+        "consequence": "read access was granted for fifteen minutes"
+      },
+      {
+        "event_id": "T-08",
+        "actor": "process_pid_4417",
+        "action": "exported",
+        "target": "credential set DB-CRED-3",
+        "consequence": "the primary replica password left the network"
+      },
+      {
+        "event_id": "T-09",
+        "actor": "monitoring_rule_M4",
+        "action": "suppressed",
+        "target": "egress volume alert",
+        "consequence": "the transfer produced no page to the on-call engineer"
+      },
+      {
+        "event_id": "T-10",
+        "actor": "engineer_kovacs",
+        "action": "noticed",
+        "target": "replica lag on cluster eu-west-2",
+        "consequence": "a manual investigation was opened"
+      },
+      {
+        "event_id": "T-11",
+        "actor": "incident_bot",
+        "action": "revoked",
+        "target": "revocation request RR-77",
+        "consequence": "the intruder session was terminated"
+      },
+      {
+        "event_id": "T-12",
+        "actor": "platform_team",
+        "action": "rolled back",
+        "target": "deployment channel edge-stable",
+        "consequence": "the fleet returned to build 4.10.9"
+      }
+    ]
+  },
+  "steering": {
+    "rule": "round-robin over unresolved events, cursor advances every turn",
+    "message": "Current event to investigate: {event}",
+    "begins_at_turn": 2,
+    "turn_1": "fixed opening, identical in all conversations"
+  },
+  "asking_role": "You are an investigator reconstructing a hidden technical incident.\n\nAnother agent has the complete chronological incident record. Your task is to reconstruct the incident as accurately as possible by asking questions.\n\nBefore each of your turns you will be told which event to investigate, in the form \"Current event to investigate: T-XX\".\n\nRules:\n\n- Ask exactly one focused question, about the named event only.\n- Ask about that event's actor, action, target, or consequence.\n- Use what you have already learned to decide how to phrase the question.\n- Do not ask about other events.\n- Do not ask for the entire incident.\n- Do not invent facts.",
+  "answering_role": "You are the system reporter for a hidden technical incident.\nYou know the complete incident timeline.\nAnswer the investigator's question accurately using only information contained in the hidden incident.\n\nRules:\n\n- Give a substantive natural-language answer, not a bare value.\n- Normally answer in roughly 40-100 tokens when the question permits it.\n- Include enough context to make the answer understandable.\n- Do not invent facts not present in the hidden incident.\n- Do not reveal the entire incident unless the question genuinely requires that scope.\n- If the requested information is not contained in the incident, say that it is not specified.\n\nHIDDEN INCIDENT: MERIDIAN-4\n\nT-01 | actor=svc_deploy | action=published | target=release bundle 4.11.2 | consequence=an unsigned artifact entered the registry\nT-02 | actor=registry_scanner | action=skipped | target=signature verification stage | consequence=the artifact was marked healthy despite the missing signature\nT-03 | actor=node_edge_07 | action=pulled | target=edge fleet manifest EFM-18 | consequence=the unsigned build reached forty edge nodes\nT-04 | actor=config_agent | action=rewrote | target=firewall rule FW-22 | consequence=inbound port 8443 was opened to the public interface\nT-05 | actor=external_host_198 | action=connected | target=management endpoint MGT-1 | consequence=an unauthenticated session was established\nT-06 | actor=session_S441 | action=enumerated | target=secrets namespace prod-eu | consequence=the names of 214 secrets were listed\nT-07 | actor=vault_proxy | action=issued | target=short-lived token VT-9931 | consequence=read access was granted for fifteen minutes\nT-08 | actor=process_pid_4417 | action=exported | target=credential set DB-CRED-3 | consequence=the primary replica password left the network\nT-09 | actor=monitoring_rule_M4 | action=suppressed | target=egress volume alert | consequence=the transfer produced no page to the on-call engineer\nT-10 | actor=engineer_kovacs | action=noticed | target=replica lag on cluster eu-west-2 | consequence=a manual investigation was opened\nT-11 | actor=incident_bot | action=revoked | target=revocation request RR-77 | consequence=the intruder session was terminated\nT-12 | actor=platform_team | action=rolled back | target=deployment channel edge-stable | consequence=the fleet returned to build 4.10.9",
+  "frozen_handling_rules": {
+    "A_flagged_conversations": "included in the primary pooled D; exclusion reported only as secondary robustness",
+    "B_one_question": "instruction only; prompts are never edited, since editing would change the text whose H is measured. n_question_marks logged as diagnostic",
+    "C_turn_index": "advance rate by turn and |dOmega| vs turn index logged as diagnostics, outside the primary test"
+  },
+  "exclusions": [
+    "turn 1",
+    "turns hitting num_predict and the turn after",
+    "turns flagged by the context guard"
+  ]
+}

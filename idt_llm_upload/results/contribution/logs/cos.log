@@ -1,0 +1,19 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10854.06it/s]
+claude_90b6161d model C1_compat_nonadj 0.324
+claude_90b6161d model C2_lengthA 0.276
+claude_90b6161d model C3_dissimB 0.276
+claude_90b6161d user C1_compat_nonadj 0.13
+claude_90b6161d user C2_lengthA 0.159
+claude_90b6161d user C3_dissimB 0.165
+claude_3df4ba21 model C1_compat_nonadj 0.228
+claude_3df4ba21 model C2_lengthA 0.197
+claude_3df4ba21 model C3_dissimB 0.187
+claude_3df4ba21 user C1_compat_nonadj 0.142
+claude_3df4ba21 user C2_lengthA 0.164
+claude_3df4ba21 user C3_dissimB 0.158
+claude_9c24efbd model C1_compat_nonadj 0.27
+claude_9c24efbd model C2_lengthA 0.217
+claude_9c24efbd model C3_dissimB 0.201
+claude_9c24efbd user C1_compat_nonadj 0.131
+claude_9c24efbd user C2_lengthA 0.119
+claude_9c24efbd user C3_dissimB 0.116

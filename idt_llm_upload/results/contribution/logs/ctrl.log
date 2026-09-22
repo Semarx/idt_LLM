@@ -1,0 +1,21 @@
+cells from: ['claude_90b6161d', 'claude_3df4ba21', 'claude_9c24efbd']
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5908.60it/s]
+  claude_90b6161d model C1_compat_nonadj   med=0.0024 obs=0.0515 clr=20/100 1789669389
+  claude_90b6161d model C2_lengthA         med=0.0009 obs=0.0515 clr=9/100 1789669392
+  claude_90b6161d model C3_dissimB         med=0.0010 obs=0.0515 clr=14/100 1789669395
+  claude_90b6161d user  C1_compat_nonadj   med=0.0034 obs=0.1051 clr=25/100 1789669398
+  claude_90b6161d user  C2_lengthA         med=0.0157 obs=0.1051 clr=99/100 1789669401
+  claude_90b6161d user  C3_dissimB         med=0.0147 obs=0.1051 clr=100/100 1789669405
+  claude_3df4ba21 model C1_compat_nonadj   med=0.0134 obs=0.1280 clr=59/100 1789669456
+  claude_3df4ba21 model C2_lengthA         med=0.0056 obs=0.1280 clr=6/100 1789669458
+  claude_3df4ba21 model C3_dissimB         med=0.0051 obs=0.1280 clr=15/100 1789669459
+  claude_3df4ba21 user  C1_compat_nonadj   med=0.0069 obs=0.0653 clr=10/100 1789669461
+  claude_3df4ba21 user  C2_lengthA         med=0.0359 obs=0.0653 clr=100/100 1789669462
+  claude_3df4ba21 user  C3_dissimB         med=0.0258 obs=0.0653 clr=94/100 1789669464
+  claude_9c24efbd model C1_compat_nonadj   med=0.0195 obs=0.0961 clr=83/100 1789669515
+  claude_9c24efbd model C2_lengthA         med=0.0109 obs=0.0961 clr=38/100 1789669517
+  claude_9c24efbd model C3_dissimB         med=0.0138 obs=0.0961 clr=45/100 1789669519
+  claude_9c24efbd user  C1_compat_nonadj   med=0.0155 obs=0.1804 clr=31/100 1789669520
+  claude_9c24efbd user  C2_lengthA         med=0.0305 obs=0.1804 clr=100/100 1789669521
+  claude_9c24efbd user  C3_dissimB         med=0.0275 obs=0.1804 clr=87/100 1789669523
+saved

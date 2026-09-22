@@ -1,0 +1,5 @@
+corpus,record,side,N,k,eps,I,room,resid,cells,npc,symbol_ok,cell_ok,room_ok,saturated,screen,q95_global,pct_global,clear_global,strat_cover,q95_strat,pct_strat,clear_strat,q95_local,pct_local,clear_local,q95_circ,pct_circ,clear_circ
+C2,pooled_k3,model,184,3,0.174592991470942,0.15558598761171183,0.8911353560123083,0.7355493684005965,18,10.22,True,True,True,False,PASS,0.07092,100.0,True,1.0,0.05317,100.0,True,0.06233,100.0,True,0.08523,100.0,True
+C2,pooled_k3,user,184,3,0.3734778475266006,0.42401689172192203,1.1353200585523933,0.7113031668304712,16,11.5,True,True,True,False,PASS,0.04943,100.0,True,1.0,0.0507,100.0,True,0.11928,100.0,True,0.07001,100.0,True
+C2,pooled_k2,model,184,2,0.21301572728325,0.14248815681988614,0.6689090924747432,0.526420935654857,7,26.29,True,True,True,False,PASS,0.0225,100.0,True,1.0,0.02753,100.0,True,0.10685,100.0,True,0.04366,100.0,True
+C2,pooled_k2,user,184,2,0.3774746033105661,0.21682320917627385,0.5744047606770599,0.3575815515007861,8,23.0,True,True,True,False,PASS,0.03071,100.0,True,1.0,0.0327,100.0,True,0.06637,100.0,True,0.03378,100.0,True

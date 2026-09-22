@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 1474.03it/s]
+  k=3 model eps=0.1746  within=True local=True circ=True pooled=True  cover_within=0.864
+  k=3 user  eps=0.3735  within=True local=True circ=True pooled=True  cover_within=0.908
+  k=2 model eps=0.2130  within=True local=True circ=True pooled=True  cover_within=0.962
+  k=2 user  eps=0.3775  within=True local=True circ=True pooled=True  cover_within=0.935
+saved
